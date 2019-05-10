@@ -48,7 +48,6 @@ class Dashboard extends Component {
 export default Dashboard;
 Dashboard.propTypes = {
   signInUser: PropTypes.func,
-  loading: PropTypes.bool,
   status: PropTypes.string,
   user: PropTypes.object
 };
