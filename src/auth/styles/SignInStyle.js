@@ -18,6 +18,9 @@ const SignInStyle = StyleSheet.create({
   inputContainer: {
     marginTop: 10
   },
+  buttonHolder: {
+    marginTop: 20
+  },
   buttonContainer: {
     height: 50,
     width: "100%",

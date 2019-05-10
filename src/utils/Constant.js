@@ -6,3 +6,7 @@ export const ENTER_PASSWORD = "Please enter your email id";
 export const DOES_NOT_EXIST = "User doesn't exist";
 export const IN_VALID_EMAIL = "Please enter valid emailId";
 export const IN_VALID_PASSWORD = "Password must be more than six characters";
+export const USER_NAME = "Username";
+export const PASSWORD = "Password";
+export const LOGIN = "Login";
+export const EMPLOYEE_LIST = "Employee List";

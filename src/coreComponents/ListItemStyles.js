@@ -4,15 +4,18 @@ import colors from "../utils/Colors";
 const ListItemStyles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 10,
     backgroundColor: colors.white,
-    marginHorizontal: 6,
-    marginVertical: 3,
-    borderRadius: 3
+    paddingTop: 10
   },
   text: {
     fontSize: 14,
     color: colors.balck
+  },
+  divider: {
+    height: 1,
+    width: "100%",
+    backgroundColor: colors.dividerColor,
+    marginTop: 10
   }
 });
 

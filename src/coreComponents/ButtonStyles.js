@@ -26,8 +26,7 @@ const ButtonStyles = StyleSheet.create({
     fontSize: 12,
     alignItems: "center",
     marginBottom: 2,
-    justifyContent: "center",
-    fontFamily: "Lato-Regular"
+    justifyContent: "center"
   },
   leftImage: {
     position: "absolute",

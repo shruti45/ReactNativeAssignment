@@ -14,7 +14,10 @@ import {
   IN_VALID_EMAIL,
   IN_VALID_PASSWORD,
   ENTER_EMAIL_ID,
-  ENTER_PASSWORD
+  ENTER_PASSWORD,
+  USER_NAME,
+  PASSWORD,
+  LOGIN
 } from "../../utils/Constant";
 import { isValidEmail, isValidPassword } from "../../utils/Validation";
 
@@ -87,30 +90,24 @@ class SignIn extends Component {
           <View style={styles.subContainer}>
             <Input
               srcLeft={emailIcon}
-              placeholder="Username"
+              placeholder={USER_NAME}
               keyboardType="email-address"
-              returnKeyType={"done"}
-              autoCapitalize={"none"}
-              autoCorrect={false}
               placeholderTextColor={colors.placeholderTextColor}
               onChangeText={val => this.setState({ emailId: val })}
             />
             <View style={styles.inputContainer}>
               <Input
                 srcLeft={passwordIcon}
-                placeholder="Password"
-                returnKeyType={"done"}
-                autoCapitalize={"none"}
-                autoCorrect={false}
+                placeholder={PASSWORD}
+                secureTextEntry={true}
                 maxLength={20}
                 placeholderTextColor={colors.placeholderTextColor}
                 onChangeText={val => this.setState({ password: val })}
               />
             </View>
-            <View style={{ marginTop: 20 }}>
+            <View style={styles.buttonHolder}>
               <Button
-                loading={this.props.loading}
-                title={"Login"}
+                title={LOGIN}
                 container={styles.buttonContainer}
                 textStyle={styles.buttonLabel}
                 onPress={() => this.handleSignIn()}
@@ -126,7 +123,6 @@ class SignIn extends Component {
 export default SignIn;
 SignIn.propTypes = {
   signInUser: PropTypes.func,
-  loading: PropTypes.bool,
   status: PropTypes.string,
   user: PropTypes.object
 };

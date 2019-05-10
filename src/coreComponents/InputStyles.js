@@ -15,7 +15,6 @@ const InputStyles = StyleSheet.create({
     flex: 1
   },
   input: {
-    fontFamily: "Lato-Regular",
     height: 50,
     fontSize: 14,
     padding: 10,
@@ -38,7 +37,6 @@ const InputStyles = StyleSheet.create({
     height: 20
   },
   inputDesc: {
-    fontFamily: "Lato-Regular",
     height: 100,
     fontSize: 14,
     paddingTop: 0,
@@ -63,9 +61,6 @@ const InputStyles = StyleSheet.create({
     flexDirection: "column",
     backgroundColor: colors.white
   }
-  // button: {
-  //   ...CommonStyles.circleButton
-  // }
 });
 
 export default InputStyles;

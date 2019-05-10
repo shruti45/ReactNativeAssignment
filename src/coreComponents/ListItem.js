@@ -10,16 +10,13 @@ const ListItem = props => {
       <Text style={styles.text}>Age: {props.data.age}</Text>
       <Text style={styles.text}>Email: {props.data.email}</Text>
       <Text style={styles.text}>Phone No:{props.data.phoneNo}</Text>
+      <View style={styles.divider} />
     </View>
   );
 };
 export default ListItem;
 
 ListItem.propTypes = {
-  name: PropTypes.string,
-  gender: PropTypes.string,
-  age: PropTypes.string,
-  email: PropTypes.string,
-  phoneNo: PropTypes.string
+  data: PropTypes.object
 };
 ListItem.defaultProps = {};
